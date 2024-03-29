@@ -21,6 +21,9 @@ for lang in lang_counter.most_common(15):
     languages.append(lang[0])
     popularity.append(lang[1])
 
+languages.reverse()
+popularity.reverse()
+
 plt.barh(languages, popularity)
 
 # print(lang_counter.most_common(15))
