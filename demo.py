@@ -8,4 +8,8 @@ dev_y = [38496, 42000, 46752, 49320, 53200, 56000, 62316, 54928, 67317, 68748, 7
 
 plt.plot(dev_x, dev_y)
 
+plt.xlabel("Ages")
+plt.ylabel("Median Salary (USD)")
+plt.title("Median Salary (USD) by Age")
+
 plt.show()
