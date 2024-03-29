@@ -5,7 +5,7 @@ plt.style.use("fivethirtyeight")
 slices = [60, 40]
 labels = ["Sixty","Forty"]
 
-plt.pie(slices, labels=labels)
+plt.pie(slices, labels=labels, wedgeprops={"edgecolor": "black"})
 
 plt.title("Pie Chart")
 plt.tight_layout()
