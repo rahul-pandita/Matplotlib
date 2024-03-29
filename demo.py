@@ -27,4 +27,10 @@ plt.title("Median Salary (USD) by Age")
 
 plt.legend()
 
+# adding a grid
+plt.grid(True)
+
+# add padding
+plt.tight_layout()
+
 plt.show()
