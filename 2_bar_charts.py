@@ -13,14 +13,24 @@ with open("data.csv", "r") as csv_file:
     for row in csv_reader:
         lang_counter.update(row["LanguagesWorkedWith"].split(";"))
 
-print(lang_counter)
+
+languages = []
+popularity =[]
+
+for lang in lang_counter.most_common(15):
+    languages.append(lang[0])
+    popularity.append(lang[1])
+
+plt.barh(languages, popularity)
+
+# print(lang_counter.most_common(15))
 
 
-# plt.title("Median Salary (USD) by Age")
-# plt.xlabel("Ages")
-# plt.ylabel("Median Salary (USD)")
+plt.title("Most Popular Languages")
+plt.ylabel("Programming languages")
+plt.xlabel("No. of Users")
 
-# plt.tight_layout()
+plt.tight_layout()
 
-# plt.show()
+plt.show()
 # print(x_indexes)
