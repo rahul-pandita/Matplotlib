@@ -29,6 +29,8 @@ plt.bar(x_indexes + width, js_dev_y, width=width, color="#e5ae38", label="JavaSc
 
 plt.legend()
 
+plt.xticks(ticks=x_indexes, labels=ages_x)
+
 plt.title("Median Salary (USD) by Age")
 plt.xlabel("Ages")
 plt.ylabel("Median Salary (USD)")
@@ -36,3 +38,4 @@ plt.ylabel("Median Salary (USD)")
 plt.tight_layout()
 
 plt.show()
+# print(x_indexes)
