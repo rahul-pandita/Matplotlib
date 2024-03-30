@@ -9,8 +9,9 @@ player2 = [1, 1, 1, 1, 2, 2, 2, 3, 4]
 player3 = [1, 1, 1, 2, 2, 2, 3, 3, 3]
 
 labels = ["player1", "player2", "player3"]
+colors = ["pink", "orange", "green"]
 
-plt.stackplot(minutes, player1, player2, player3, labels=labels)
+plt.stackplot(minutes, player1, player2, player3, labels=labels, colors=colors)
 
 plt.legend(loc="upper left")
 
