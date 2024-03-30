@@ -19,6 +19,12 @@ y = [0, 1, 3, 4, 6, 5, 7]
 
 plt.plot_date(dates, y, linestyle="solid")
 
+plt.gcf().autofmt_xdate()
+
+date_format = mpl_dates.DateFormatter("%d %b %Y")
+
+plt.gca().xaxis.set_major_formatter(date_format)
+
 # data = pd.read_csv('data.csv')
 # price_date = data['Date']
 # price_close = data['Close']
